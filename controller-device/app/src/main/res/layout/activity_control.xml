@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:background="#000000">
+    <ImageView android:id="@+id/ivScreen" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitCenter"/>
+    <LinearLayout android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="#CC000000" android:padding="8dp" android:gravity="center_vertical">
+        <ImageButton android:id="@+id/btnBack" android:layout_width="40dp" android:layout_height="40dp" android:src="@android:drawable/ic_menu_revert" android:background="?attr/selectableItemBackgroundBorderless"/>
+        <TextView android:id="@+id/tvInfo" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="已连接" android:textColor="#FFFFFF" android:paddingStart="12dp"/>
+        <ImageButton android:id="@+id/btnHome" android:layout_width="40dp" android:layout_height="40dp" android:src="@android:drawable/ic_menu_today" android:background="?attr/selectableItemBackgroundBorderless"/>
+    </LinearLayout>
+</FrameLayout>

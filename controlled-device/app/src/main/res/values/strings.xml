@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">远程被控端</string>
+    <string name="accessibility_desc">远程控制辅助服务，用于执行远程触控指令</string>
+</resources>

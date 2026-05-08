@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:padding="20dp" android:gravity="center_horizontal">
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="📱 远程被控端" android:textSize="24sp" android:textStyle="bold" android:layout_marginTop="30dp" android:layout_marginBottom="30dp"/>
+    <com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="服务器地址">
+        <com.google.android.material.textfield.TextInputEditText android:id="@+id/etServerUrl" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="ws://192.168.1.100:8765"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:hint="房间ID">
+        <com.google.android.material.textfield.TextInputEditText android:id="@+id/etRoomId" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="room001"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.button.MaterialButton android:id="@+id/btnStart" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:text="启动被控服务" android:textSize="16sp"/>
+    <com.google.android.material.button.MaterialButton android:id="@+id/btnStop" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:text="停止服务" android:enabled="false" style="@style/Widget.MaterialComponents.Button.OutlinedButton"/>
+    <TextView android:id="@+id/tvStatus" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:text="状态: 未连接" android:textSize="14sp"/>
+    <TextView android:id="@+id/tvHint" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:text="⚠️ 请先在设置中开启无障碍服务" android:textSize="12sp" android:textColor="#FF6600"/>
+    <com.google.android.material.button.MaterialButton android:id="@+id/btnAccessibility" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="打开无障碍设置" style="@style/Widget.MaterialComponents.Button.TextButton"/>
+</LinearLayout>

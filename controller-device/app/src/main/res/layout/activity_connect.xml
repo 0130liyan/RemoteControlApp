@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:padding="24dp" android:gravity="center_horizontal">
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="🎮 远程控制端" android:textSize="28sp" android:textStyle="bold" android:layout_marginTop="40dp" android:layout_marginBottom="40dp"/>
+    <com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="服务器地址">
+        <com.google.android.material.textfield.TextInputEditText android:id="@+id/etServerUrl" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="ws://192.168.1.100:8765"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:hint="房间ID">
+        <com.google.android.material.textfield.TextInputEditText android:id="@+id/etRoomId" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="room001"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.button.MaterialButton android:id="@+id/btnConnect" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:text="连接被控设备" android:textSize="16sp"/>
+    <TextView android:id="@+id/tvStatus" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="状态: 未连接" android:textSize="14sp" android:gravity="center"/>
+</LinearLayout>
