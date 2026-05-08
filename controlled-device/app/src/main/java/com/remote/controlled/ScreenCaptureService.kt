@@ -57,7 +57,7 @@ class ScreenCaptureService : Service() {
     }
 
     private suspend fun captureLoop() {
-        while (isActive) {
+        while (true) {
             val frame = captureFrame()
             if (frame != null) {
                 val json = JsonObject().apply { addProperty("type", "frame"); addProperty("data", frame) }
